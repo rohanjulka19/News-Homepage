@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | News homepage</title>
+  <script>
+        function openMobileMenu() {
+            let mobileMenu = document.getElementById("mobile-menu")
+            let mobileMenuCloseBtn = document.getElementById("mobile-menu-close")
+            let mobileMenuOpenBtn = document.getElementById("mobile-menu-open")
+            let body = document.getElementById("body")
+            body.style.background = "hsla(240, 100%, 5%, 20%)"
+            mobileMenu.style.display = "block"
+            mobileMenuCloseBtn.style.display = "flex"
+            mobileMenuOpenBtn.style.display = "none"
+        }
+      
+        function closeMobileMenu() {
+            let mobileMenu = document.getElementById("mobile-menu")
+            let mobileMenuCloseBtn = document.getElementById("mobile-menu-close")
+            let mobileMenuOpenBtn = document.getElementById("mobile-menu-open")
+            
+            
+            body.style.background = "hsl(36, 100%, 99%)"
+            mobileMenu.style.display = "none"
+            mobileMenuCloseBtn.style.display = "none"
+            mobileMenuOpenBtn.style.display = "block"
+        }
+        console.log("loading completed")
+</script>
+</head>
+<body id="body">
+<div class="container">
+    <div id="mobile-menu" class="mobile-menu">
+        <div id="mobile-menu-close" class="mobile-menu-cross" onclick="closeMobileMenu()">
+            <img src="assets/images/icon-menu-close.svg">
+        </div>
+        <div class="mobile-menu-items">
+            <ul class="mobile-menu-list">
+                <li class="mobile-menu-item"> Home </li>
+                <li class="mobile-menu-item"> New </li>
+                <li class="mobile-menu-item"> Popular </li>
+                <li class="mobile-menu-item"> Trending </li>
+                <li class="mobile-menu-item"> Categories</li>
+            </ul>
+            
+        </div>
+    </div>
+    <div class="head">
+        <div class="icon">
+            <img src="assets/images/logo.svg"/>
+        </div>
+        <div>
+        
+        </div>
+        <div id="mobile-menu-open" class="mobile-menu-button" onclick="openMobileMenu()">
+            <img src="assets/images/icon-menu.svg"/>
+        </div>
+        <div class="menu-div">
+            <ul class="menu">
+                <li class="menu-item"> Home </li>
+                <li class="menu-item"> New </li>
+                <li class="menu-item"> Popular </li>
+                <li class="menu-item"> Trending </li>
+                <li class="menu-item"> Categories</li>
+            </ul>
+        </div>
+    </div>
+    <div class="main">
+        <div class="banner">
+            <img src="assets/images/image-web-3-desktop.jpg"/>
+        </div>
+        <div class="latest-news-panel">
+            <div>
+                    <h2 class="latest-news-panel-heading">New</h2>
+            </div>
+            <div class="latest-news-panel-item" style="border-bottom: 1px solid hsla(233, 8%, 79%, 40%); margin-top: 1em;">
+                <h3 class="latest-news-panel-item-heading "> Hydrogen VS Electric Cars</h3>
+                <p class="latest-news-panel-item-info">
+                    Will hydrogen-fueled cars ever catch up to EVs?
+                </p>
+            </div>
+            <div class="latest-news-panel-item"  style="border-bottom: 1px solid hsla(233, 8%, 79%, 40%);">
+                <h3 class="latest-news-panel-item-heading "> The Downsides of AI Artistry </h3>
+                <p class="latest-news-panel-item-info">
+                     What are the possible adverse effects of on-demand AI image generation?
+                </p>
+            </div>
+            <div class="latest-news-panel-item">
+                <h3 class="latest-news-panel-item-heading ">  Is VC Funding Drying Up? </h3>
+                <p class="latest-news-panel-item-info">
+                      Private funding by VC firms is down 50% YOY. We take a look at what that means.
+                </p>
+            </div>
+        </div>
+        <div class="main-news-heading">
+            <h1>The Bright Future of Web 3.0? </h1>
+        </div>
+        <div class="main-news-info">
+            <div>
+                <p>
+            
+                    We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                    But is it really fulfilling its promise?
+                </p>
+            </div>
+            <div>
+                <a class="read-more-button"> Read more </a>
+            </div>
+        
+        </div>
+        <div class="news-item-list">
+                <div class="news-item">
+                    <div class="news-item-image-div">
+                        <img class="news-item-image" src="assets/images/image-retro-pcs.jpg"/>
+                    </div>
+                    <div class="news-item-info">
+                        <div><h2 class="news-item-number"> 01 </h2></div>
+                        <div><h3 class="news-item-heading"> Reviving Retro PCs </h3></div>
+                        <div><p class="news-item-description"> What happens when old PCs are given modern upgrades? </p></div>            
+                    </div>
+                </div>
+                    
+                <div class="news-item">
+                    <div class="news-item-image">
+                        <img class="news-item-image" src="assets/images/image-top-laptops.jpg"/>
+                    </div>
+                    <div class="news-item-info">
+                        <div><h2 class="news-item-number"> 02 </h2></div>
+                        <div><h3 class="news-item-heading"> Top 10 Laptops of 2022 </h3></div>
+                        <div><p class="news-item-description"> Our best picks for various needs and budgets. </p></div>
+                    </div>
+                </div>
+                
+                <div class="news-item">
+                    <div class="news-item-image">
+                        <img class="news-item-image" src="assets/images/image-gaming-growth.jpg"/>
+                    </div>
+                    <div class="news-item-info">
+                        <div><h2 class="news-item-number"> 03 </h2></div>
+                        <div><h3 class="news-item-heading"> The Growth of Gaming </h3></div>
+                        <div><p class="news-item-description"> How the pandemic has sparked fresh opportunities. </p></div>
+                    </div>
+                </div>
+        </div>    
+    </div>
+        
+    </div>
+  <br><br>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Rohan Julka</a>.
+  </div>
+</body>
+</html>
